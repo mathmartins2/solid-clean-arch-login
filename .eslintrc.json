@@ -1,6 +1,8 @@
 {
 	"extends": "standard-with-typescript",
-	"no-use-before-declare": true,
+	"rules": {
+    "@typescript-eslint/space-before-blocks": 0
+  },
 	"parserOptions": {
 		"project": "./tsconfig.json"
 	}
