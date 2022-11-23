@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest",
+    "test": "npx jest",
+    "test:staged": "npx jest",
     "prepare": "husky install"
   },
   "keywords": [],
