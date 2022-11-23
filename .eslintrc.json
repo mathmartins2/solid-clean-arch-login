@@ -2,7 +2,8 @@
 	"extends": "standard-with-typescript",
 	"rules": {
     "@typescript-eslint/space-before-blocks": "off",
-		"@typescript-eslint/strict-boolean-expressions": "off"
+		"@typescript-eslint/strict-boolean-expressions": "off",
+		"@typescript-eslint/method-signature-style": "off"
   },
 	"parserOptions": {
 		"project": "./tsconfig.json"
