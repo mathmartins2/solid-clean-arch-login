@@ -9,7 +9,8 @@ module.exports = {
   modulePathIgnorePatterns: [
     '<rootDir>/src/presentation/protocols/index.ts',
     '<rootDir>/src/presentation/controllers/signup/signup-protocols.ts',
-    '<rootDir>/src/data/usecases/add-account/db-add-account-protocols.ts'
+    '<rootDir>/src/data/usecases/add-account/db-add-account-protocols.ts',
+    '<rootDir>/src/main/server.ts'
   ],
   preset: '@shelf/jest-mongodb'
 }
