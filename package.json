@@ -10,7 +10,7 @@
     "test:verbose": "npx jest --passWithNoTests",
     "test:unit": "npm test -- --watch --config jest-unit-config.js",
     "test:integration": "npm test -- --watch --config jest-integration-config.js",
-    "test:staged": "npm test --",
+    "test:staged": "npm test -- --detectOpenHandles",
     "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
   },
