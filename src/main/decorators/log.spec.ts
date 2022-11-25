@@ -46,9 +46,8 @@ describe('Log Controller Decorator', () => {
     expect(handleSpy).toHaveBeenCalledWith(httpRequest)
   })
 
-  test('Should call controller handle', async () => {
+  test('Should return the same result of the controller', async () => {
     const { sut } = makeSut()
-    const handleSpy = jest.spyOn(sut, 'handle')
     const httpRequest: httpRequest = {
       body: {
         name: 'any_name',
@@ -57,7 +56,12 @@ describe('Log Controller Decorator', () => {
         passwordConfirmation: 'any_password'
       }
     }
-    await sut.handle(httpRequest)
-    expect(handleSpy).toHaveBeenCalledWith(httpRequest)
+    const httpReponse = await sut.handle(httpRequest)
+    expect(httpReponse).toEqual({
+      body: {
+        name: 'any_name'
+      },
+      statusCode: 200
+    })
   })
 })
