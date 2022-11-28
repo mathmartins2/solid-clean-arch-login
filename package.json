@@ -1,8 +1,7 @@
 {
-  "name": "mango",
+  "name": "clean-node-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Nodejs Rest API using TDD, Clean Architecture and Typescript",
   "scripts": {
     "start": "ts-node src/main/server.ts",
     "start:dev": "npx nodemon src/main/server.ts",
@@ -14,8 +13,7 @@
     "test:ci": "npm test -- --coverage",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Matheus Martins",
   "license": "ISC",
   "devDependencies": {
     "@shelf/jest-mongodb": "^4.1.3",
