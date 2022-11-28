@@ -13,7 +13,8 @@ module.exports = {
     '<rootDir>/src/presentation/controllers/signup/signup-protocols.ts',
     '<rootDir>/src/data/usecases/add-account/db-add-account-protocols.ts',
     '<rootDir>/src/main/server.ts',
-    '<rootDir>/src/main/config/env.ts'
+    '<rootDir>/src/main/config/env.ts',
+    '<rootDir>/src/main/adapters/express-route-adapter.ts'
   ],
   preset: '@shelf/jest-mongodb'
 }
