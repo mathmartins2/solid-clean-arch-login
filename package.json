@@ -3,8 +3,9 @@
   "version": "1.1.0",
   "description": "Nodejs Rest API using TDD, Clean Architecture and Typescript",
   "scripts": {
-    "start": "ts-node src/main/server.ts",
+    "start": "node dist/main/server.js",
     "start:dev": "npx nodemon src/main/server.ts",
+    "build": "rimraf dist && npx tsc",
     "test": "npx jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "npx jest --passWithNoTests",
     "test:unit": "npm test -- --watch --config jest-unit-config.js",
@@ -36,6 +37,7 @@
     "husky": "^8.0.2",
     "jest": "^29.3.1",
     "lint-staged": "^13.0.3",
+    "rimraf": "^3.0.2",
     "supertest": "^6.3.1",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
@@ -48,5 +50,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.12.1",
     "validator": "^13.7.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

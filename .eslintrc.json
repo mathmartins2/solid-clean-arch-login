@@ -3,10 +3,9 @@
 	"rules": {
     "@typescript-eslint/space-before-blocks": "off",
 		"@typescript-eslint/strict-boolean-expressions": "off",
-		"@typescript-eslint/method-signature-style": "off",
 		"@typescript-eslint/no-misused-promises": "off"
   },
 	"parserOptions": {
-		"project": "./tsconfig.json"
+		"project": "./tsconfig-eslint.json"
 	}
 }
