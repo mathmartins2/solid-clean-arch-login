@@ -1,4 +1,5 @@
 import { AddAccount, AddAccountModel, AccountModel, Hasher, AddAccountRepository } from './db-add-account-protocols'
+
 export class DbAddAccount implements AddAccount {
   constructor (
     private readonly hasher: Hasher,
